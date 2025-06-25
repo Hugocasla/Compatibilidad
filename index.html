@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Compatibilidad Astrológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compatibilidad Astrológica</h1>
+        <p class="disclaimer">
+            Esta es una herramienta de entretenimiento basada en signos solares. 
+            Recuerda que la compatibilidad real se construye día a día.
+        </p>
+
+        <div class="form-container">
+            <div class="person-form">
+                <h2>Persona 1</h2>
+                <label for="name1">Nombre:</label>
+                <input type="text" id="name1" placeholder="Tu nombre">
+                <label for="dob1">Fecha de Nacimiento:</label>
+                <input type="date" id="dob1">
+            </div>
+
+            <div class="person-form">
+                <h2>Persona 2</h2>
+                <label for="name2">Nombre:</label>
+                <input type="text" id="name2" placeholder="El nombre de tu novia">
+                <label for="dob2">Fecha de Nacimiento:</label>
+                <input type="date" id="dob2">
+            </div>
+        </div>
+
+        <button id="calculate-btn">Analizar Compatibilidad</button>
+
+        <div id="result" class="hidden">
+            <h2 id="result-title"></h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
